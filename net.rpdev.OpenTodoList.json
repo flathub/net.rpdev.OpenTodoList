@@ -42,14 +42,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
-
-                    /* On top of the last release, we need some fixes to get the app building
-                       via flatpak-builder. As soon as v3.10 is out, we can refer to proper tags here:
-                    */
-                    /*
                     "tag": "3.10.0"
-                    */
-                    "commit": "2d960d22796102873d7d1fb392f360e3136c49d9"
                 }
             ]
         }
