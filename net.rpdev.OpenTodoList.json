@@ -42,8 +42,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
-                    /* "tag": "3.10.0" */
-                    "commit": "1c7a565f541442d1b7da0b6551b178877086a1ce"
+                    "tag": "3.10.1"
                 }
             ]
         }
