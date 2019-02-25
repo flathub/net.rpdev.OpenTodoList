@@ -42,7 +42,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
-                    "tag": "3.10.1"
+                    "tag": "3.10.1" /* Force rebuild */
                 }
             ]
         }
