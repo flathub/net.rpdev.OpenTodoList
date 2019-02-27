@@ -46,6 +46,7 @@
                     /* "tag": "3.10.1", */
                     
                     /* hot fix: showdown.js cannot be loaded with Qt 5.12.1 */
+                    "branch": "master",
                     "commit": "2ebf41d794ee9936f84c1206b6664ab5433e2f9f"
                 }
             ]
