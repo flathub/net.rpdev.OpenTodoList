@@ -42,7 +42,11 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
-                    "tag": "3.10.1" /* Force rebuild */
+                    /* Build latest release */
+                    /* "tag": "3.10.1", */
+                    
+                    /* hot fix: showdown.js cannot be loaded with Qt 5.12.1 */
+                    "commit": "2ebf41d794ee9936f84c1206b6664ab5433e2f9f"
                 }
             ]
         }
