@@ -43,7 +43,7 @@
                     "type": "git",
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
                     /* Build latest release */
-                    "tag": "3.10.2"
+                    "tag": "3.10.3"
                     
                     /* Build specific commit */
                     /*
