@@ -45,7 +45,7 @@
                     
                     
                     /* Build latest release */
-                    "tag": "3.10.3"
+                    "tag": "3.11.0"
                     
                     
                     /* Build specific commit */
