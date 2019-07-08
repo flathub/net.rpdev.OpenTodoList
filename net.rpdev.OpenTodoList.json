@@ -45,14 +45,12 @@
                     
                     
                     /* Build latest release */
-                    "tag": "3.13.0"
+                    /*"tag": "3.13.0"*/
                     
                     
                     /* Build specific commit */
-                    /*
                     "branch": "master",
-                    "commit": "2ebf41d794ee9936f84c1206b6664ab5433e2f9f"
-                    */
+                    "commit": "75d8849702c059d6a343173d49d3f99dd6b69dcb"
                 }
             ]
         }
