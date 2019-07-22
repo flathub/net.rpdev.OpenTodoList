@@ -49,8 +49,8 @@
                     
                     
                     /* Build specific commit */
-                    "branch": "master",
-                    "commit": "75d8849702c059d6a343173d49d3f99dd6b69dcb"
+                    "branch": "234-rework-todo-list-page",
+                    "commit": "6fdee714a1e3a343f7f8b18c9f2de01f83d86baf"
                 }
             ]
         }
