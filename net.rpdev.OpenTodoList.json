@@ -50,7 +50,7 @@
                     
                     /* Build specific commit */
                     "branch": "234-rework-todo-list-page",
-                    "commit": "61e8cc248fb95e9c9490a1dcad26b648a868c39e"
+                    "commit": "f6d4304994afa6ffd582b9b16bf5b5363e97f320"
                 }
             ]
         }
