@@ -11,7 +11,8 @@
         "--filesystem=home",
         "--socket=pulseaudio",
         "--share=network",
-        "--device=dri"
+        "--device=dri",
+        "--talk-name=org.freedesktop.secrets"
     ],
 
     "modules": [
@@ -51,7 +52,7 @@
                     
                     /* Build specific commit */
                     "branch": "234-rework-todo-list-page",
-                    "commit": "a2960dc76ebcd0efdac6049c5a7367d48175f36b"
+                    "commit": "14821378a138226d2bef69e83cb758d7f181c3e7"
                 }
             ]
         }
