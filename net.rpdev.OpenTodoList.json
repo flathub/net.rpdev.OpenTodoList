@@ -52,7 +52,7 @@
                     
                     /* Build specific commit */
                     "branch": "234-rework-todo-list-page",
-                    "commit": "https://gitlab.commsolid.com"
+                    "commit": "8b0cfb6ae267306dbe1225b1f17c8d4a0c540b8a"
                 }
             ]
         }
