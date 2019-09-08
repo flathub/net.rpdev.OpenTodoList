@@ -44,15 +44,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
-                    
-                    
-                    /* Build latest release */
                     "tag": "3.15.0"
-                    
-                    
-                    /* Build specific commit */
-                    /*"branch": "master",
-                    "commit": "8b0cfb6ae267306dbe1225b1f17c8d4a0c540b8a"*/
                 }
             ]
         }
