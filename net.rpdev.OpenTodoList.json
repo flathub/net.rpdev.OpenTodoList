@@ -44,7 +44,7 @@
         {
           "type": "git",
           "url": "https://gitlab.com/rpdev/opentodolist.git",
-          "tag": "3.16.0"
+          "tag": "3.16.1"
         }
       ]
     }
