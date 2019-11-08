@@ -1,52 +1,57 @@
 {
-  "id": "net.rpdev.OpenTodoList",
-  "runtime": "org.kde.Platform",
-  "runtime-version": "5.13",
-  "sdk": "org.kde.Sdk",
-  "command": "OpenTodoList",
-  "finish-args": [
-    "--share=ipc",
-    "--socket=x11",
-    "--socket=wayland",
-    "--filesystem=home",
-    "--socket=pulseaudio",
-    "--share=network",
-    "--device=dri",
-    "--talk-name=org.freedesktop.secrets"
-  ],
-  "modules": [
-    {
-        "name": "libsecret",
-        "buildsystem": "meson",
-        "config-opts": [
-            "-Dmanpage=false",
-            "-Dgtk_doc=false",
-            "-Dvapi=false"
-        ],
-        "sources": [
-            {
-                "type": "archive",
-                "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.19.1/libsecret-0.19.1.tar.gz",
-                "sha256": "303c6e8cf3e12534e885b0682cd6130716c6834397b76d3829321b6d83b2389c"
-            }
-        ]
-    },
-    {
-        "name": "opentodolist",
-        "buildsystem": "qmake",
-        "config-opts": [
-            "CONFIG+=release",
-            "INSTALL_PREFIX=/app",
-            "CONFIG+=opentodolist_flatpak"
-        ],
-        "sources": [
+    "id": "net.rpdev.OpenTodoList",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.13",
+    "sdk": "org.kde.Sdk",
+    "command": "OpenTodoList",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--filesystem=home",
+        "--socket=pulseaudio",
+        "--share=network",
+        "--device=dri",
+        "--talk-name=org.freedesktop.secrets"
+    ],
+    "modules": [
         {
-          "type": "git",
-          "url": "https://gitlab.com/rpdev/opentodolist.git",
-          /*"tag": "3.16.1"*/
-          "commit": "35aa041c3444a60b6d8f28e3a547b52bdc8078a3"
+            "name": "libsecret",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dmanpage=false",
+                "-Dgtk_doc=false",
+                "-Dvapi=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.19.1/libsecret-0.19.1.tar.gz",
+                    "sha256": "303c6e8cf3e12534e885b0682cd6130716c6834397b76d3829321b6d83b2389c"
+                }
+            ]
+        },
+        {
+            "name": "opentodolist",
+            "buildsystem": "qmake",
+            "config-opts": [
+                "CONFIG+=release",
+                "INSTALL_PREFIX=/app",
+                "CONFIG+=opentodolist_flatpak"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.com/rpdev/opentodolist.git",
+                    
+                    /* Build tag */
+                    /*"tag": "3.16.1"*/
+          
+                    /* Build specific commit */
+                    "branch": "master",
+                    "commit": "35aa041c3444a60b6d8f28e3a547b52bdc8078a3"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
