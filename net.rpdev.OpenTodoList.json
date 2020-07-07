@@ -30,12 +30,12 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
-                    "tag": "3.23.0"
+                    "tag": "3.24.0"
 
                     /* Build specific commit */
                     /*
                     "branch": "master",
-                    "commit": "19e14ef466a0a17d5540d405cf5d45620b9ccedc"
+                    "commit": "e371abc347c35e6f872c2e18207625382b90c67d"
                     */
                 }
             ]
