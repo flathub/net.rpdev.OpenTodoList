@@ -30,7 +30,7 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
-                    "tag": "3.25.0"
+                    "tag": "3.26.0"
 
                     /* Build specific commit */
                     /*
