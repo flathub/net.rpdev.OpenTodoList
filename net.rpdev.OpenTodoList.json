@@ -17,6 +17,28 @@
     "modules": [
         "shared-modules/libsecret/libsecret.json",
         {
+            "name": "qtremoteobjects",
+            "buildsystem": "qmake",
+            "make-install-args": [
+                "INSTALL_ROOT=/app"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/qt/qtremoteobjects.git",
+                    "disable-shallow-clone": true,
+                    "branch": "dev"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "qmake -query QT_VERSION",
+                        "git checkout v$(qmake -query QT_VERSION)"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "opentodolist",
             "buildsystem": "qmake",
             "config-opts": [
@@ -36,7 +58,15 @@
 
                     /* Build specific commit */
                     "branch": "master",
-                    "commit": "512f54a9db7a899a99c5a6b39a59e04aeacc2f6e"
+                    "commit": "0cf8c799f84fa8e86f59ee045a0c2991cdc47b4b"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "touch .flatpak-build",
+                        "cp -r /app/usr/lib/mkspecs/features .",
+                        "mkdir -p /app/bin && cd /app/bin && ln -s ../usr/bin/OpenTodoList OpenTodoList"
+                    ]
                 }
             ]
         }
