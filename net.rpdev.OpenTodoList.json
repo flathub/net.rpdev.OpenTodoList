@@ -12,7 +12,8 @@
         "--socket=pulseaudio",
         "--share=network",
         "--device=dri",
-        "--talk-name=org.freedesktop.secrets"
+        "--talk-name=org.freedesktop.secrets",
+        "--talk-name=org.freedesktop.Notifications"
     ],
     "modules": [
         "shared-modules/libsecret/libsecret.json",
@@ -43,7 +44,7 @@
             "buildsystem": "qmake",
             "config-opts": [
                 "CONFIG+=release",
-                "INSTALL_PREFIX=/app/",
+                "INSTALL_PREFIX=/app",
                 "CONFIG+=opentodolist_flatpak"
             ],
             "sources": [
@@ -65,7 +66,8 @@
                     "commands": [
                         "touch .flatpak-build",
                         "cp -r /app/usr/lib/mkspecs/features .",
-                        "mkdir -p /app/usr/share && cd /app/usr/share && ln -s ../../share/icons ."
+                        "mkdir -p /app/usr/share && cd /app/usr/share && ln -s ../../share/icons .",
+                        "mkdir -p /apps/lib/ && cd /app/lib && ln -s /app$(qmake -query QT_INSTALL_LIBS)/libQt5RemoteObjects.so.5 ."
                     ]
                 }
             ]
