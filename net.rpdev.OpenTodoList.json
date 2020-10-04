@@ -43,7 +43,7 @@
             "buildsystem": "qmake",
             "config-opts": [
                 "CONFIG+=release",
-                "INSTALL_PREFIX=/app/usr",
+                "INSTALL_PREFIX=/app/",
                 "CONFIG+=opentodolist_flatpak"
             ],
             "sources": [
@@ -65,7 +65,7 @@
                     "commands": [
                         "touch .flatpak-build",
                         "cp -r /app/usr/lib/mkspecs/features .",
-                        "mkdir -p /app/bin && cd /app/bin && ln -s ../usr/bin/OpenTodoList OpenTodoList && cd .. && mkdir -p share && cd share && ln -s ../usr/share/appdata ."
+                        "mkdir -p /app/usr/share && cd /app/usr/share && ln -s ../../share/icons ."
                     ]
                 }
             ]
