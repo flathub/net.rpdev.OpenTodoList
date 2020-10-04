@@ -65,7 +65,7 @@
                     "commands": [
                         "touch .flatpak-build",
                         "cp -r /app/usr/lib/mkspecs/features .",
-                        "mkdir -p /app/bin && cd /app/bin && ln -s ../usr/bin/OpenTodoList OpenTodoList"
+                        "mkdir -p /app/bin && cd /app/bin && ln -s ../usr/bin/OpenTodoList OpenTodoList && cd .. && mkdir -p share && cd share && ln -s ../usr/share/appdata ."
                     ]
                 }
             ]
