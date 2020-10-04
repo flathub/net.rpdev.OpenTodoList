@@ -43,7 +43,7 @@
             "buildsystem": "qmake",
             "config-opts": [
                 "CONFIG+=release",
-                "INSTALL_PREFIX=/app",
+                "INSTALL_PREFIX=/app/usr",
                 "CONFIG+=opentodolist_flatpak"
             ],
             "sources": [
