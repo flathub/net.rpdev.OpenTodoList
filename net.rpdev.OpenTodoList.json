@@ -12,10 +12,34 @@
         "--socket=pulseaudio",
         "--share=network",
         "--device=dri",
-        "--talk-name=org.freedesktop.secrets"
+        "--talk-name=org.freedesktop.secrets",
+        "--talk-name=org.freedesktop.Notifications",
+        "--env=XDG_CURRENT_DESKTOP=gnome"
     ],
     "modules": [
         "shared-modules/libsecret/libsecret.json",
+        {
+            "name": "qtremoteobjects",
+            "buildsystem": "qmake",
+            "make-install-args": [
+                "INSTALL_ROOT=/app"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/qt/qtremoteobjects.git",
+                    "disable-shallow-clone": true,
+                    "branch": "dev"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "qmake -query QT_VERSION",
+                        "git checkout v$(qmake -query QT_VERSION)"
+                    ]
+                }
+            ]
+        },
         {
             "name": "opentodolist",
             "buildsystem": "qmake",
@@ -30,13 +54,22 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
-                    "tag": "3.26.0"
+                    "tag": "3.27.0"
 
                     /* Build specific commit */
                     /*
                     "branch": "master",
-                    "commit": "ab0002186f9533b10fb1e4fbc8ec239befc5330c"
+                    "commit": "0cf8c799f84fa8e86f59ee045a0c2991cdc47b4b"
                     */
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "touch .flatpak-build",
+                        "cp -r /app/usr/lib/mkspecs/features .",
+                        "mkdir -p /app/usr/share && cd /app/usr/share && ln -s ../../share/icons .",
+                        "mkdir -p /apps/lib/ && cd /app/lib && ln -s /app$(qmake -query QT_INSTALL_LIBS)/libQt5RemoteObjects.so.5 ."
+                    ]
                 }
             ]
         }
