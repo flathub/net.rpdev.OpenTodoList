@@ -60,7 +60,7 @@
 
                     /* Build specific commit */
                     "branch": "master",
-                    "commit": "31f4e1881b6dc5966f6c5820e922c716c03df8ba"
+                    "commit": "aec092664daa10f198dbb4148c53d1fe349ef82b"
                 },
                 {
                     "type": "shell",
