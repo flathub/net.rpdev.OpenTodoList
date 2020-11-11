@@ -54,7 +54,7 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
-                    "tag": "3.28.0"
+                    "tag": "3.28.1"
 
                     /* Build specific commit */
                     /*
