@@ -58,7 +58,7 @@
 
                     /* Build specific commit */
                     "branch": "master",
-                    "commit": "a6a910b7bf925bfce571910a9bdad5ba28afd768"
+                    "commit": "2dd1ae6475a2cf8113bd0aaad7e08bd23817c6a6"
                 },
                 {
                     "type": "shell",
