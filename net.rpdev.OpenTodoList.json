@@ -65,7 +65,7 @@
                 {
                     "type": "shell",
                     "commands": [
-                        "ln -s /app/usr/lib/*-linux-gnu /app/usr/lib/all-linux-gnu",
+                        "ln -s /app/usr/lib/*-linux-gnu* /app/usr/lib/all-linux-gnu",
                         "ln -s /app/share /app/usr/share",
                         "ln -s /app/usr/lib/all-linux-gnu/libQt5RemoteObjects.so.5 /app/lib"
                     ]
