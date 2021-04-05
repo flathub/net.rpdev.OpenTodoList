@@ -1,7 +1,7 @@
 {
     "id": "net.rpdev.OpenTodoList",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.14",
+    "runtime-version": "5.15",
     "sdk": "org.kde.Sdk",
     "command": "OpenTodoList",
     "finish-args": [
@@ -14,7 +14,7 @@
         "--device=dri",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.Notifications",
-        "--env=XDG_CURRENT_DESKTOP=gnome"
+        "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "modules": [
         "shared-modules/libsecret/libsecret.json",
@@ -48,6 +48,7 @@
                 "-DCMAKE_INSTALL_LIBDIR=/app/lib",
                 "-DLIB_INSTALL_DIR=/app/lib",
                 "-DOPENTODOLIST_FLATPAK=ON",
+                "-DOPENTODOLIST_WITH_KNOTIFICATIONS=ON",
                 "-DQt5RemoteObjects_DIR=/app/usr/lib/all-linux-gnu/cmake/Qt5RemoteObjects"
             ],
             "sources": [
@@ -56,13 +57,13 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
+                    /*
                     "tag": "3.33.0"
+                    */
 
                     /* Build specific commit */
-                    /*
                     "branch": "master",
-                    "commit": "e80393c6fa35a425b4d8bc4be4adb37f8ba99acb"
-                    */
+                    "commit": "655f09a4ae5379c2a98f3c95da01776a994a437d"
                 },
                 {
                     "type": "shell",
