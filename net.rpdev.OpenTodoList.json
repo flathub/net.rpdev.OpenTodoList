@@ -12,6 +12,7 @@
         "--socket=pulseaudio",
         "--share=network",
         "--device=dri",
+        "--device=shm",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher"
