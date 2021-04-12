@@ -64,7 +64,7 @@
 
                     /* Build specific commit */
                     "branch": "development",
-                    "commit": "40c1840129971e8a22ff337283fd027d72057bdf"
+                    "commit": "2e40550bf6234c318bcb5140348b845ec521422e"
                 },
                 {
                     "type": "shell",
