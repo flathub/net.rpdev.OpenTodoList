@@ -63,8 +63,8 @@
                     */
 
                     /* Build specific commit */
-                    "branch": "master",
-                    "commit": "655f09a4ae5379c2a98f3c95da01776a994a437d"
+                    "branch": "development",
+                    "commit": "40c1840129971e8a22ff337283fd027d72057bdf"
                 },
                 {
                     "type": "shell",
