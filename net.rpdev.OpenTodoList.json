@@ -1,7 +1,7 @@
 {
     "id": "net.rpdev.OpenTodoList",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.14",
+    "runtime-version": "5.15",
     "sdk": "org.kde.Sdk",
     "command": "OpenTodoList",
     "finish-args": [
@@ -12,34 +12,13 @@
         "--socket=pulseaudio",
         "--share=network",
         "--device=dri",
+        "--device=shm",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.Notifications",
-        "--env=XDG_CURRENT_DESKTOP=gnome"
+        "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "modules": [
         "shared-modules/libsecret/libsecret.json",
-        {
-            "name": "qtremoteobjects",
-            "buildsystem": "qmake",
-            "make-install-args": [
-                "INSTALL_ROOT=/app"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/qt/qtremoteobjects.git",
-                    "disable-shallow-clone": true,
-                    "branch": "dev"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "qmake -query QT_VERSION",
-                        "git checkout v$(qmake -query QT_VERSION)"
-                    ]
-                }
-            ]
-        },
         {
             "name": "opentodolist",
             "buildsystem": "cmake-ninja",
@@ -48,7 +27,7 @@
                 "-DCMAKE_INSTALL_LIBDIR=/app/lib",
                 "-DLIB_INSTALL_DIR=/app/lib",
                 "-DOPENTODOLIST_FLATPAK=ON",
-                "-DQt5RemoteObjects_DIR=/app/usr/lib/all-linux-gnu/cmake/Qt5RemoteObjects"
+                "-DOPENTODOLIST_WITH_KNOTIFICATIONS=ON"
             ],
             "sources": [
                 {
@@ -56,20 +35,19 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
+                    /*
                     "tag": "3.33.0"
+                    */
 
                     /* Build specific commit */
-                    /*
-                    "branch": "master",
-                    "commit": "e80393c6fa35a425b4d8bc4be4adb37f8ba99acb"
-                    */
+                    "branch": "stable",
+                    "commit": "48237b606d76022e9128dc22a8242532509376d3"
                 },
                 {
                     "type": "shell",
                     "commands": [
-                        "ln -s /app/usr/lib/*-linux-gnu* /app/usr/lib/all-linux-gnu",
-                        "ln -s /app/share /app/usr/share",
-                        "ln -s /app/usr/lib/all-linux-gnu/libQt5RemoteObjects.so.5 /app/lib"
+                        "mkdir -p /app/usr",
+                        "ln -s /app/share /app/usr/share"
                     ]
                 }
             ]
