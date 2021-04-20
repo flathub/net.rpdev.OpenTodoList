@@ -46,6 +46,7 @@
                 {
                     "type": "shell",
                     "commands": [
+                        "mkdir -p /app/usr",
                         "ln -s /app/share /app/usr/share"
                     ]
                 }
