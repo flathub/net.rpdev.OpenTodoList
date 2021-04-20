@@ -41,7 +41,7 @@
 
                     /* Build specific commit */
                     "branch": "development",
-                    "commit": "c1b639ab5c3fb74e8011e3fcc02d742886fe550b"
+                    "commit": "958abe75bb326abe4f699bcaaf4bb410f200302f"
                 },
                 {
                     "type": "shell",
