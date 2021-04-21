@@ -15,7 +15,7 @@
         "--device=shm",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.Notifications",
-        "--talk-name=org.kde.StatusNotifierWatcher"
+        "--env=XDG_CURRENT_DESKTOP=gnome"
     ],
     "modules": [
         "shared-modules/libsecret/libsecret.json",
@@ -26,8 +26,7 @@
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_INSTALL_LIBDIR=/app/lib",
                 "-DLIB_INSTALL_DIR=/app/lib",
-                "-DOPENTODOLIST_FLATPAK=ON",
-                "-DOPENTODOLIST_WITH_KNOTIFICATIONS=ON"
+                "-DOPENTODOLIST_FLATPAK=ON"
             ],
             "sources": [
                 {
@@ -41,7 +40,7 @@
 
                     /* Build specific commit */
                     "branch": "stable",
-                    "commit": "48237b606d76022e9128dc22a8242532509376d3"
+                    "commit": "6e6aec13a5cd6d42fe816a27fa185cacfe40a0bd"
                 },
                 {
                     "type": "shell",
