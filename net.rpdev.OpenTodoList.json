@@ -15,7 +15,7 @@
         "--device=shm",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.Notifications",
-        "--env=XDG_CURRENT_DESKTOP=gnome"
+        "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "modules": [
         "shared-modules/libsecret/libsecret.json",
@@ -26,7 +26,8 @@
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_INSTALL_LIBDIR=/app/lib",
                 "-DLIB_INSTALL_DIR=/app/lib",
-                "-DOPENTODOLIST_FLATPAK=ON"
+                "-DOPENTODOLIST_FLATPAK=ON",
+                "-DOPENTODOLIST_WITH_KNOTIFICATIONS=ON"
             ],
             "sources": [
                 {
@@ -34,13 +35,15 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
-                    /*
-                    "tag": "3.33.0"
-                    */
+                    
+                    "tag": "3.34.0"
+                    
 
                     /* Build specific commit */
-                    "branch": "stable",
-                    "commit": "6e6aec13a5cd6d42fe816a27fa185cacfe40a0bd"
+                    /*
+                    "branch": "development",
+                    "commit": "958abe75bb326abe4f699bcaaf4bb410f200302f"
+                    */
                 },
                 {
                     "type": "shell",
