@@ -36,13 +36,13 @@
 
                     /* Build tag */
                     
+                    /*
                     "tag": "3.36.0"                    
+                    */
 
                     /* Build specific commit */
-                    /*
-                    "branch": "development",
-                    "commit": "958abe75bb326abe4f699bcaaf4bb410f200302f"
-                    */
+                    "branch": "455-ui-code-cleanup",
+                    "commit": "b21b1e2e0aa69c05d2c80b6c3a1a115d9de4a396"
                 },
                 {
                     "type": "shell",
