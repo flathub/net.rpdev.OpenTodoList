@@ -42,7 +42,7 @@
 
                     /* Build specific commit */
                     "branch": "455-ui-code-cleanup",
-                    "commit": "69dd4538afc5a81d555c334bbf244045c7558599"
+                    "commit": "2e8f4af6076ef29f13d31ce3098d6ddcc62cc2a3"
                 },
                 {
                     "type": "shell",
