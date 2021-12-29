@@ -1,7 +1,7 @@
 {
     "id": "net.rpdev.OpenTodoList",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15",
+    "runtime-version": "5.15-21.08",
     "sdk": "org.kde.Sdk",
     "command": "OpenTodoList",
     "finish-args": [
@@ -35,14 +35,14 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
-                    
-                    "tag": "3.38.0"                    
-
-                    /* Build specific commit */
                     /*
-                    "branch": "455-ui-code-cleanup",
-                    "commit": "2e8f4af6076ef29f13d31ce3098d6ddcc62cc2a3"
+                    "tag": "3.38.0"                    
                     */
+                    /* Build specific commit */
+                    
+                    "branch": "development",
+                    "commit": "0333f5184dfa0181b8b510998c7f78f709d9273c"
+                    
                 },
                 {
                     "type": "shell",
