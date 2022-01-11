@@ -41,7 +41,7 @@
 
                     /* Build specific commit */
                     
-                    "branch": "development",
+                    "branch": "stable",
                     "commit": "0a5a000210851df390bb182ac1c9c8d6f239b0ba"
                     
                 },
