@@ -29,6 +29,9 @@
                 "-DOPENTODOLIST_FLATPAK=ON",
                 "-DOPENTODOLIST_WITH_KNOTIFICATIONS=ON"
             ],
+            "cleanup": [
+                "*.a"
+            ],
             "sources": [
                 {
                     "type": "git",
