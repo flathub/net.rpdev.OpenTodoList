@@ -48,14 +48,6 @@
                     "commit": "0a5a000210851df390bb182ac1c9c8d6f239b0ba"
                     */
                 }
-                /*,
-                {
-                    "type": "shell",
-                    "commands": [
-                        "mkdir -p /app/usr",
-                        "ln -s /app/share /app/usr/share"
-                    ]
-                }*/
             ]
         }
     ]
