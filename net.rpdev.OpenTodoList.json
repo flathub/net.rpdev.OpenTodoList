@@ -6,7 +6,7 @@
     "command": "OpenTodoList",
     "finish-args": [
         "--share=ipc",
-        "--socket=fallback-x11",
+        "--socket=x11",
         "--socket=wayland",
         "--filesystem=home",
         "--socket=pulseaudio",
@@ -39,7 +39,7 @@
 
                     /* Build tag */
                     
-                    "tag": "3.40.0"
+                    "tag": "3.39.1"
                     
                     
                     /* Build specific commit */
