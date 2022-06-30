@@ -44,8 +44,8 @@
                     
                     /* Build specific commit */
                     
-                    "branch": "development",
-                    "commit": "d232a079b926e4e5d1bd11cdd09d760912783530"
+                    "branch": "532-global-schedule-view",
+                    "commit": "3b5701720a48685ed342a5c86bbe292067121ef8"
                     
                 }
             ]
