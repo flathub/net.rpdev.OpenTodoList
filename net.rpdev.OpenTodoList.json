@@ -38,15 +38,15 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
-                    
+                    /*
                     "tag": "3.41.1"
-                    
+                    */
                     
                     /* Build specific commit */
-                    /*
-                    "branch": "532-global-schedule-view",
-                    "commit": "3b5701720a48685ed342a5c86bbe292067121ef8"
-                    */
+                    
+                    "branch": "520-option-to-remember-the-last-opened-item",
+                    "commit": "c618eee20f8050ecb33550e6940086846a342ab1"
+                    
                 }
             ]
         }
