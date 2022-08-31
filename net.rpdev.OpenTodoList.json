@@ -44,8 +44,8 @@
                     
                     /* Build specific commit */
                     
-                    "branch": "520-option-to-remember-the-last-opened-item",
-                    "commit": "c618eee20f8050ecb33550e6940086846a342ab1"
+                    "branch": "565-no-matching-of-app-window-to-launcher-on-kde-on-wayland",
+                    "commit": "5912e90ae0f234c658d3795753d6e1eca6fc1e67"
                     
                 }
             ]
