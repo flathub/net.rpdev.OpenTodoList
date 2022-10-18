@@ -38,15 +38,15 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
-                    /*
-                    "tag": "3.41.1"
-                    */
+                    
+                    "tag": "3.42.0"
+                    
                     
                     /* Build specific commit */
-                    
+                    /*
                     "branch": "565-no-matching-of-app-window-to-launcher-on-kde-on-wayland",
                     "commit": "5912e90ae0f234c658d3795753d6e1eca6fc1e67"
-                    
+                    */
                 }
             ]
         }
