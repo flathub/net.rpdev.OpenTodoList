@@ -45,7 +45,7 @@
                     /* Build specific commit */
                     
                     "branch": "541-migrate-to-qt6",
-                    "commit": "281fcab6a20f87c2293f98351fe3850bea8e795b"
+                    "commit": "9c8622e110b99fe17a316648e7c31782741a09d8"
                     
                 }
             ]
