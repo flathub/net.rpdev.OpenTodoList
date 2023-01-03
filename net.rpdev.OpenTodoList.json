@@ -1,7 +1,7 @@
 {
     "id": "net.rpdev.OpenTodoList",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-21.08",
+    "runtime-version": "6.4",
     "sdk": "org.kde.Sdk",
     "command": "OpenTodoList",
     "finish-args": [
@@ -26,8 +26,7 @@
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_INSTALL_LIBDIR=/app/lib",
                 "-DLIB_INSTALL_DIR=/app/lib",
-                "-DOPENTODOLIST_FLATPAK=ON",
-                "-DOPENTODOLIST_WITH_KNOTIFICATIONS=ON"
+                "-DOPENTODOLIST_FLATPAK=ON"
             ],
             "cleanup": [
                 "*.a"
@@ -38,15 +37,16 @@
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
 
                     /* Build tag */
-                    
+                    /*
                     "tag": "3.42.0"
+                    */
                     
                     
                     /* Build specific commit */
-                    /*
-                    "branch": "565-no-matching-of-app-window-to-launcher-on-kde-on-wayland",
-                    "commit": "5912e90ae0f234c658d3795753d6e1eca6fc1e67"
-                    */
+                    
+                    "branch": "development",
+                    "commit": "bae500f94a8fe09429cf17689f307e53f57fc7d7"
+                    
                 }
             ]
         }
