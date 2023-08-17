@@ -18,7 +18,22 @@
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "modules": [
-        "shared-modules/libsecret/libsecret.json",
+        {
+            "name": "libsecret",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dmanpage=false",
+                "-Dgtk_doc=false",
+                "-Dvapi=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.19.1/libsecret-0.19.1.tar.gz",
+                    "sha256": "303c6e8cf3e12534e885b0682cd6130716c6834397b76d3829321b6d83b2389c"
+                }
+            ]
+        },
         {
             "name": "opentodolist",
             "buildsystem": "cmake-ninja",
