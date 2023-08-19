@@ -24,8 +24,10 @@
             "config-opts": [
                 "-Dmanpage=false",
                 "-Dvapi=false",
-                "-Dgtk_doc=false",
-                "-Dintrospection=false"
+                "-Dgtk_doc=false"
+                
+                /* Only available in newer library versions: */
+                /* "-Dintrospection=false" */
             ],
             "cleanup": [
                 "/bin",
