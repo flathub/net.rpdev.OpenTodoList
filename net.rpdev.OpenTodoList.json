@@ -23,8 +23,15 @@
             "buildsystem": "meson",
             "config-opts": [
                 "-Dmanpage=false",
+                "-Dvapi=false",
                 "-Dgtk_doc=false",
-                "-Dvapi=false"
+                "-Dintrospection=false"
+            ],
+            "cleanup": [
+                "/bin",
+                "/include",
+                "/lib/pkgconfig",
+                "/share/man"
             ],
             "sources": [
                 {
