@@ -1,7 +1,7 @@
 {
     "id": "net.rpdev.OpenTodoList",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.5",
+    "runtime-version": "6.6",
     "sdk": "org.kde.Sdk",
     "command": "OpenTodoList",
     "finish-args": [
@@ -69,7 +69,7 @@
                     /* Build specific commit */
                     
                     "branch": "development",
-                    "commit": "1ef45b9ff1e763cc449ef97466d31bf802cd0839"
+                    "commit": "33968f8dbfa1cb52260cf61f9921f9cd1cd4403c"
                     
                 }
             ]
