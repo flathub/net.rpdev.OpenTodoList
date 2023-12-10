@@ -67,10 +67,10 @@
                     
                     
                     /* Build specific commit */
-                    /*
+                    
                     "branch": "development",
                     "commit": "33968f8dbfa1cb52260cf61f9921f9cd1cd4403c"
-                    */
+                    
                 }
             ]
         }
