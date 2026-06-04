@@ -1,7 +1,7 @@
 {
     "id": "net.rpdev.OpenTodoList",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.9",
+    "runtime-version": "6.10",
     "sdk": "org.kde.Sdk",
     "command": "OpenTodoList",
     "finish-args": [
@@ -17,32 +17,10 @@
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
+    "cleanup": [
+        "/lib/cmake"
+    ],
     "modules": [
-        {
-            "name": "libsecret",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dmanpage=false",
-                "-Dvapi=false",
-                "-Dgtk_doc=false"
-                
-                /* Only available in newer library versions: */
-                /* "-Dintrospection=false" */
-            ],
-            "cleanup": [
-                "/bin",
-                "/include",
-                "/lib/pkgconfig",
-                "/share/man"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.19.1/libsecret-0.19.1.tar.gz",
-                    "sha256": "303c6e8cf3e12534e885b0682cd6130716c6834397b76d3829321b6d83b2389c"
-                }
-            ]
-        },
         {
             "name": "opentodolist",
             "buildsystem": "cmake-ninja",
@@ -52,24 +30,12 @@
                 "-DLIB_INSTALL_DIR=/app/lib",
                 "-DOPENTODOLIST_FLATPAK=ON"
             ],
-            "cleanup": [
-                "*.a"
-            ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://gitlab.com/rpdev/opentodolist.git",
-
-                    /* Build tag */
-                    
-                    "tag": "3.51.1"
-                    
-                    
-                    
-                    /* Build specific commit */
-                    /*
-                    "commit": "33968f8dbfa1cb52260cf61f9921f9cd1cd4403c"
-                    */
+                    "tag": "3.51.1",
+                    "commit": "ef7b5731461b39862e1e9c6ef562d9e7dc19e974"
                 }
             ]
         }
